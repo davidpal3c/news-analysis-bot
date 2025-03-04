@@ -1,7 +1,18 @@
-# Created by https://www.gitignore.io
 
 ### OSX ###
 .DS_Store
+backend/.DS_Store
+frontend/.DS_Store
+node_modules/.DS_Store
+public/.DS_Store
+src/.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
 .AppleDouble
 .LSOverride
 
@@ -9,9 +20,12 @@
 Icon
 
 dummy_data
+backend/dummy_data
 dummy_data.txt
 creds.md
 endpoints.md
+backend/creds.md
+backend/endpoints.md
 
 # Thumbnails
 ._*
@@ -31,6 +45,7 @@ Temporary Items
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
+backend/__pycache__/
 *.py[cod]
 
 # C extensions
@@ -38,6 +53,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+.env/
 env/
 build/
 develop-eggs/
@@ -91,3 +107,41 @@ local_settings.py
 
 .env
 db.sqlite3
+
+# dependencies
+/node_modules
+frontend/node_modules
+node_moodules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+.next
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts

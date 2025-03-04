@@ -1,0 +1,73 @@
+.header {
+    background-color: #112A46;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-left: 1rem;
+}
+
+.header p {
+    font-size: 1.5rem;
+}
+
+.header img {
+    height: 3rem;
+    align-self: center;
+}
+
+.logoTitleDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.bodyDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bodyTitle {
+    background-color: white;
+    color: #112A46;
+    justify-self: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.5rem 0;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    gap: 1rem;
+}
+
+.navBar a.active {
+    text-decoration: underline;
+}
+
+.cardDiv {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cardContainer {
+    width: fit-content;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.image {
+    border-bottom: 1px solid black;
+}

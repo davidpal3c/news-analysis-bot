@@ -26,5 +26,7 @@ class NewsQueryRetrieveUpdateDeleteView(generics.RetrieveUpdateDestroyAPIView):
     queryset = NewsQuery.objects.all()
     serializer_class = NewsQuerySerializer
 
-
+    def delete(self, request, *args, **kwargs):
+        print("Incoming data:", request.data)
+        return self.destroy(request, *args, **kwargs)
 
